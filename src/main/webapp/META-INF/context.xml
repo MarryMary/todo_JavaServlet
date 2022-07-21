@@ -1,0 +1,11 @@
+<Context reloadable = "true">
+    <Resource
+        name = "jdbc/todo"
+        auth = "Container"
+        type = "javax.sql.DataSource"
+        driverClassName = "com.mysql.jdbc.Driver"
+        url = "jdbc:mysql://localhost/ToDoList?useUnicode=true&amp;characterEncoding=utf8"
+        username = "root"
+        password = ""
+    />
+</Context>
