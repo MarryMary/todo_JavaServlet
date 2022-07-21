@@ -1,3 +1,3 @@
 # todo_JavaServlet
-Java サーブレットの本を仕上げたのでtodoアプリでも作ってみることにしましたー
-Intellij Ideaで作ってるのでJSPに署名がついてます
+Java サーブレットの本を仕上げたのでtodoアプリでも作ってみることにしましたー  
+Intellij Ideaで作ってるのでJSPになんか署名がついてます
