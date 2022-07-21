@@ -1,0 +1,2 @@
+# todo_JavaServlet
+Java サーブレットの本を仕上げたのでtodoアプリでも作ってみることにしましたー
