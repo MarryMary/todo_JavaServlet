@@ -2,11 +2,13 @@ package com.github.marrymary.todoapp.DAO;
 
 import com.github.marrymary.todoapp.Beans.User;
 
+import javax.servlet.http.HttpSession;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class Login extends DAO{
+    private User u;
     public Boolean auth(String login, String password) throws Exception {
         Connection con = getConnection();
         Boolean flag = false;
@@ -34,5 +36,9 @@ public class Login extends DAO{
         con.close();
 
         return flag;
+    }
+
+    public User getUser(){
+        return this.u;
     }
 }

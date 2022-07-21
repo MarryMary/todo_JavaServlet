@@ -1,5 +1,6 @@
 package com.github.marrymary.todoapp.Action;
 
+import com.github.marrymary.todoapp.Beans.User;
 import com.github.marrymary.todoapp.DAO.Login;
 import com.github.marrymary.todoapp.Front.Action;
 
@@ -13,14 +14,17 @@ public class LoginAction extends Action {
         String login = request.getParameter("Login");
         String password = request.getParameter("Post");
         Login auth = new Login();
+        User user = auth.getUser();
 
         Boolean AuthMode = (Boolean) session.getAttribute("IsAuth");
+
 
         if(AuthMode != null) return "todo_page.jsp";
 
         Boolean res = auth.auth(login, password);
         if(res){
             session.setAttribute("IsAuth", true);
+            session.setAttribute("UserId", user.getId());
             return "todo_page.jsp";
         }else{
             return "login_err.jsp";

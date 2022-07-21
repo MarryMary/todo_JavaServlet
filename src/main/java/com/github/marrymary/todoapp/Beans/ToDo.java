@@ -4,14 +4,14 @@ import java.io.Serializable;
 
 public class ToDo implements Serializable {
     private int id;
-    private String userid;
+    private int userid;
     private String text;
 
     public int getId() {
         return id;
     }
 
-    public String getUserid() {
+    public int getUserid() {
         return userid;
     }
 
@@ -23,7 +23,7 @@ public class ToDo implements Serializable {
         this.id = id;
     }
 
-    public void setUserid(String userid) {
+    public void setUserid(int userid) {
         this.userid = userid;
     }
 

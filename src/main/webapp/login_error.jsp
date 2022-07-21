@@ -1,16 +1,14 @@
 <%--
   Created by IntelliJ IDEA.
-  User: KaitoNakamori
-  Date: 2022/07/21
-  Time: 11:03
+  User: MarryMary
+  Date: 2022/07/20
+  Time: 20:09
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page pageEncoding="UTF-8" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
-</html>
+<%@ include file="header.html" %>
+<h1>ログインできませんでした</h1>
+<a href="login.jsp">戻る</a>
+
+<%@ include file="footer.html" %>
